@@ -6,12 +6,7 @@ import random
 
 """
 Class to represent a virtual pet.
-
-int food: The current level of satiation of the virtualPet. the higher the food value, the less hungry tha virtualPet is
-
-int maxFood: The maximum level of satiation the virtualPet can reach.
-
-int avatar: the virtualPet will have an avatar made using ascii art, the initial character, a cat, will be defined as 0
+Inspiration to start this off came from https://codepal.ai/code-generator/query/Q4ElYagR/create-tamagotchi-python
 """
 class virtualPet:
 
@@ -23,14 +18,6 @@ class virtualPet:
 
     """
     Constructor to instantiate the virtualPet class.
-    
-    params: 
-    maxFood: int, optional (default: 100)
-        The maximum level of food the virtualPet can reach.
-    avatar: int (default: 0 for a cat)
-        The pictorial representation of your pet
-    name: string
-        its name lol
     
     """
     def __init__(self, name, maxFood: int = 100, avatar: int = 0):
@@ -146,6 +133,7 @@ class virtualPet:
                 break
             else:
                 print("Invalid input! Please enter 'tie', 'bowtie', 'glasses' or 'default'!")
+                break
 
 
 
